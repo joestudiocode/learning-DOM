@@ -9,7 +9,7 @@
 
 //Dom Traversal
 
-const close = document.querySelectorAll(".close");
+// const close = document.querySelectorAll(".close");
 const card = document.querySelectorAll(".card");
 // console.log(close)
 
@@ -21,12 +21,13 @@ const card = document.querySelectorAll(".card");
 //   });
 // }
 
-close.forEach(function (param) {
-  param.addEventListener("click", function (e) {
-    e.target.parentElement.parentElement.style.display = "none";
-    e.preventDefault();
-  });
-});
+// close.forEach(function (param) {
+//   param.addEventListener("click", function (e) {
+//     e.target.parentElement.parentElement.style.display = "none";
+//     e.preventDefault();
+//     e.stopPropagation();
+//   });
+// });
 
 //preventdefault  is the method that works for prevent happening default events from a DOM, example the tag 'a' if we click, then the browser page will be reload, or a form if we click submit button then will be reaload to.
 
@@ -42,3 +43,19 @@ close.forEach(function (param) {
 //   //previousSibling
 //   //previousElementSibling ------ use this
 // }
+
+
+// const cards = document.querySelectorAll('.card');
+// card.forEach(function(card) {
+//   card.addEventListener('click', function(e) {
+//     alert('ok')
+//   });
+// });
+
+const container = document.querySelector('.container');
+container.addEventListener('click', function(e) {
+  if(e.target.className == 'close') {
+    e.target.parentElement.parentElement.style.display= 'none'
+    e.preventDefault();
+  }
+});
