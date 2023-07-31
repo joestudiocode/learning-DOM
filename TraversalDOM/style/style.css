@@ -1,0 +1,70 @@
+body {
+  margin: 50px;
+  font-family: "Times New Roman", Times, serif;
+  background-color: rgb(144, 255, 144);
+}
+.card a {
+  text-decoration: none;
+}
+.container-image {
+  align-items: flex-start;
+  box-sizing: border-box;
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+  border-radius: 50px;
+  margin: 2px;
+  justify-content: center;
+  object-fit: cover;
+}
+
+.card img {
+  box-sizing: border-box;
+  height: 100px;
+  width: 150px;
+  margin-left: -25px;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.card {
+  display: flex;
+  width: 400px;
+  height: 104px;
+  font-size: 16px;
+  border-radius: 50px;
+  background-color: #f1f1f1;
+  position: relative;
+  text-align: center;
+  margin: 3rem;
+}
+.container {
+  /* display: inline-block;
+  width: 100px;
+  margin: auto; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.span {
+  padding-left: 20px;
+  margin-top: 28px;
+}
+.nama {
+  font-size: 20px;
+}
+.telp {
+  display: block;
+  padding-top: 10px;
+}
+.close {
+  position: absolute;
+  right: 30px;
+  top: 40px;
+  font-weight: bold;
+  color: black;
+  font-size: 24px;
+  cursor: pointer;
+}
+.close:hover {
+  color: red;
+}
