@@ -48,14 +48,14 @@ img {
 
 .thumb {
   -webkit-transform: scale(1.5);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .thumb:hover {
   -webkit-transform: scale(1);
-	transform: scale(1.3);
+  transform: scale(1.3);
   filter: brightness(70%);
   cursor: pointer;
 }

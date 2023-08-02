@@ -1,19 +1,19 @@
-const container = document.querySelector('.container');
-const jumbo = document.querySelector('.jumbo');
-const thumbs = document.querySelectorAll('.thumb');
+const container = document.querySelector(".container");
+const jumbo = document.querySelector(".jumbo");
+const thumbs = document.querySelectorAll(".thumb");
 
-container.addEventListener('click', function(e) {
+container.addEventListener("click", function (e) {
   // console.log(e.target);
-  if(e.target.className == 'thumb') {
+  if (e.target.className == "thumb") {
     jumbo.src = e.target.src;
-    jumbo.classList.add('fade');
-    setTimeout(function() {
-      jumbo.classList.remove('fade');
+    jumbo.classList.add("fade");
+    setTimeout(function () {
+      jumbo.classList.remove("fade");
     }, 500);
 
-    thumbs.forEach(function(thumb) {
-      thumb.className = 'thumb';
+    thumbs.forEach(function (thumb) {
+      thumb.className = "thumb";
     });
-    e.target.classList.add('active');
+    e.target.classList.add("active");
   }
 });
